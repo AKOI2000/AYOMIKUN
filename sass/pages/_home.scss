@@ -1,0 +1,142 @@
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////MEDIA QUERYY
+
+
+@media (max-width:1025px){
+  #friends-section{
+    position: relative;
+    padding: 100px 10% !important;    
+  }
+}
+
+@media (max-width: 768px) {
+  #friends-section{
+    padding: 100px 10% !important;  
+  }
+
+  
+
+  #feature-section{
+    padding: 50px 5%;
+   .grid{
+    grid-template-columns: 1fr !important;
+   }
+  }
+
+
+  #friends-section{
+    padding: 5rem 30% !important;
+
+    .logo-grid{
+      grid-template-columns: 1fr 1fr!important;
+    }
+
+
+  }
+}
+
+
+
+#feature-section{
+  position: relative;
+  padding: 100px 5% 60px;
+
+  .grid {
+    width: 100%;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #e0e2ef;
+    border-bottom: 1px solid #e0e2ef;
+    text-align: center;
+  }
+
+  .grid-cell {
+    width: 100%;
+    padding: 56px 14px;
+  }
+
+  .feature-text {
+    margin-bottom: 16px;
+    font-family: "eudoxus-extraBold", sans-serif;
+    font-weight: 700;
+  }
+
+  .subheading-large {
+    color: #656b8e;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-family: "inter", sans-serif;
+}
+
+.subheading-large.grey-400 {
+  color: #989dbb;
+}
+}
+
+
+
+
+
+#friends-section{
+  position: relative;
+  padding: 100px 5%;
+  z-index: 2000;
+
+
+  .container-small {
+    width: 100%;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .title-wrap-split {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .logo-grid {
+    margin-top: 24px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .w-layout-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+  }
+
+
+  .logo-wrap {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: inline-block;
+      max-width: 100%;
+      filter: grayscale(100%);
+      transition: all .2s;
+
+      &:hover, &:active{
+        filter: grayscale(0);
+        transform: scale(1.2);
+      }
+    }
+  }
+  
+}

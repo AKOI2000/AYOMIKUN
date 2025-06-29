@@ -1,0 +1,183 @@
+#about{
+    position: relative;
+    display: block;
+    // padding: 4rem 3% auto !important;
+    background-color: #0f1221;
+  
+    .overview-grid {
+      width: 100%;
+      align-items: center;
+      grid-template-columns: 1.5fr 1fr;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto;
+    }
+  
+    .w-layout-grid {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      // grid-row-gap: 16px;
+      grid-column-gap: 16px;
+    }
+  
+    .about-img-box {
+      position: relative;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .about-img {
+      position: relative;
+      z-index: 999;
+      width: 65%;
+     
+    }
+  
+    .overview-text-wrap {
+      margin: 4rem auto 1rem;
+      color: #fff;
+    }
+  
+    .subheading-large {
+      color: #656b8e;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+  
+   
+  
+    .wrap-horizontal {
+      display: flex;
+      align-items: center;
+  
+      .freelancer-icon {
+        display: flex;
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        margin-right: 12px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #5e3bee;
+    
+        i{
+          font-size: 2rem;
+        }
+      }
+    }
+  
+    .top-bottom-margin {
+      margin-top: 36px;
+      margin-bottom: 48px;
+    }
+  
+  
+  
+    
+  
+  }
+
+  
+
+
+
+  @media (max-width: 768px) {
+    #about{
+      padding: 7rem 5% 0;
+      .overview-grid{
+        grid-template-columns: 1fr;
+      }
+
+      .w-layout-grid{
+        grid-row-gap: 1.6rem;
+      }
+
+      .about-img-box{
+        grid-row: 2/-1;
+      }
+
+      .about-img{
+        width: 80%;
+      }
+
+      .overview-text-wrap{
+        margin: auto 2rem;
+        text-align: center;   
+      }
+
+      .wrap-horizontal{
+        justify-content: center;
+      }
+
+      .top-bottom-margin{
+        margin: 2.8rem auto 4rem;
+      }
+
+    }
+
+    h2{
+      font-size: 3.5rem;
+    }
+  }
+
+
+  
+  @media (min-width:769px) and (max-width: 1024px) {
+    #about{
+      padding: 0 4% 1rem;
+      .overview-grid{
+       grid-template-columns: .8fr 1fr;
+      }
+
+      .w-layout-grid{
+        grid-column-gap: 1.2rem;
+      }
+
+
+      .about-img{
+        width: 100%;
+      }
+
+      .overview-text-wrap{
+        margin: 2rem auto 1rem;   
+      }
+
+      .subheading-large{
+        font-size: 1.4rem;
+      }
+
+      .top-bottom-margin{
+        margin: 2rem auto 4rem;
+      }
+
+      .wrap-horizontal{
+        align-items: center;
+
+        .freelancer-icon{
+          width: 4rem;
+          height: 4rem;
+          min-width: 4rem;
+          margin-right: 1rem;
+
+          i{
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+    }
+
+    h2{
+      font-size: 3.5rem;
+    }
+
+    p{
+      font-size: 1.5rem;
+    }
+  }

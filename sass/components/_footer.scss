@@ -1,0 +1,258 @@
+#footer {
+  padding: 5rem 3%;
+  background-color: #0f1221;
+
+  .footer-container {
+    width: 100%;
+    max-width: 1060px;
+    margin: auto;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    justify-content: center;
+  }
+
+  .footer-author {
+    .footer-img-box {
+      width: 10rem;
+      height: 10rem;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+
+      .footer-image {
+        width: 160%;
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .h5-white {
+      font-family: "eudoxus-extraBold";
+      font-size: 2.2rem;
+      color: #fff;
+    }
+
+    .footer-role-grey {
+      color: #989dbb;
+      font-family: "inter";
+      font-size: 1.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .footer-email {
+      margin-top: 5rem;
+
+      .h5-small {
+        font-size: 1.9rem;
+      }
+
+      .white-700 {
+        color: #fff;
+        font-family: "eudoxus-extraBold";
+      }
+
+      .grey-300 {
+        color: #989dbb;
+        font-family: "eudoxus-light";
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+
+  .footer-cta {
+    margin-top: 2rem;
+    .cta-heading {
+      font-size: 7.2rem;
+      color: #fff;
+      font-family: "eudoxus-extraBold";
+    }
+
+    .cta-paragraph {
+      color: #989dbb;
+      font-size: 1.6rem;
+      width: 85%;
+      margin-top: 2rem;
+      line-height: 1.5;
+    }
+
+    .footer-icons {
+      display: flex;
+      margin-top: 2rem;
+      padding: 2rem 0;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        &:not(:first-child) {
+          margin-left: 3.5rem;
+        }
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .footer-line-break {
+    height: 1px;
+    margin-top: 62px;
+    margin-bottom: 62px;
+    background-color: #1e2238;
+    grid-column: 1/-1;
+  }
+
+  .footer-footer {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-nav {
+      .footer-links {
+        display: flex;
+        li {
+          &:not(:first-child) {
+            margin-left: 3rem;
+          }
+          a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      color: #989dbb;
+      margin-right: 7%;
+      font-size: 1.6rem;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// MEDIA QUERY
+///
+///
+///
+
+@media (max-width: 1025px) {
+  #footer {
+    padding: 5rem 4%;
+
+    .footer-container{
+        margin: auto 5%;
+    }
+    .footer-wrapper {
+      grid-template-columns: .7fr 1fr;
+      column-gap: 1rem;
+      align-items: center;
+      row-gap: 0;
+    }
+
+    .footer-author {
+      .h5-white {
+        font-size: 1.8rem;
+      }
+
+      .footer-email {
+        .h5-small {
+          font-size: 1.4rem;
+        }
+
+        .white-700 {
+          font-family: "eudoxus-bold";
+        }
+      }
+    }
+
+    .footer-cta {
+    //   margin-top: 8rem;
+      .cta-heading {
+        font-size: 6rem;
+      }
+    }
+
+    .footer-footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+
+      .footer-copyright {
+        margin: auto;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+
+    .footer-line-break {
+      height: 3px;
+      color: #fff;
+      margin: 4rem 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    padding: 10rem 5rem 1rem;
+    .footer-wrapper {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 2rem;
+    }
+
+    .footer-author {
+      .h5-white {
+        font-size: 2rem;
+      }
+
+      .footer-email {
+        .h5-small {
+          font-size: 1.6rem;
+        }
+
+        .white-700 {
+          font-family: "eudoxus-bold";
+        }
+      }
+    }
+
+    .footer-cta {
+      margin-top: 8rem;
+      .cta-heading {
+        font-size: 6rem;
+      }
+    }
+
+    .footer-footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+
+      .footer-copyright {
+        margin: auto;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+
+    .footer-line-break {
+      height: 3px;
+      color: #fff;
+      margin: 2rem 0;
+    }
+  }
+}

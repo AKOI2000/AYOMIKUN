@@ -1,0 +1,153 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #656b8e;
+  padding: 1.5rem 3%;
+  position: relative;
+  max-width: 120rem;
+  margin: auto;
+
+  .logo {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+
+    &-img {
+      width: 40%;
+    }
+  }
+
+  .nav-items {
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    position: relative;
+    z-index: 999;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 1.5rem 0;
+
+    a {
+      color: #656b8e;
+      text-decoration: none;
+      transition: opacity 0.3s;
+      font-weight: 500;
+      padding: 0 3.2rem;
+      font-size: 1.4rem;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    width: 30%;
+    justify-content: right;
+    align-items: center;
+    gap: 2rem;
+    margin-right: -4%;
+    z-index: 3;
+
+    a {
+      color: #656b8e;
+
+      i {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+
+        &:hover {
+          background: rgba(94, 58, 238, 0.08);
+          border-radius: 5rem;
+        }
+      }
+    }
+  }
+
+  .menu-toggle {
+    font-size: 3rem;
+    background-color: transparent;
+    display: none;
+    border: none;
+    color: #656b8e;
+    cursor: pointer;
+    z-index: 9999;
+    position: relative;
+  }
+}
+
+
+@media (max-width: 1025px) {
+  .social-icons{
+    margin-right: 3% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1.2rem 3%;
+    max-width: 100%;
+
+    .logo {
+      width: 30%;
+
+      &-img {
+        width: 70%;
+      }
+    }
+
+    .menu-toggle {
+      display: block;
+      order: 3;
+      border: 1px solid #656b8e;
+      padding: 0.5rem;
+    }
+
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      gap: 2rem;
+      background: #fff;
+      padding: 2rem;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      z-index: 999;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 4rem;
+      width: 100%;
+      
+
+      a {
+        font-size: 2rem !important;
+      }
+    }
+
+    .social-icons {
+      margin-left: 0;
+      margin-right: -10rem !important;
+      gap: 1rem;
+
+      a {
+        i {
+          font-size: 2rem !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.button-grey {
+    min-width: 140px;
+    padding: 12px 26px;
+    background-color: #f9f9fc;
+    color: #0f1221;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.about-button{
+    &:hover, &:active{
+        filter: brightness(0.9);
+        transform: scale(1.05);
+    }
+}
+
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.hero-button {
+    max-width: 180px;
+    min-height: 58px;
+    margin-left: 8px;
+    padding: 12px 24px;
+    background-color: #5e3bee;
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    box-shadow: -3px -2px 12px 0px #ffffff, 3px 2px 12px 0px rgb(95 157 231 / 48%);
+    color: #ffffff;
+    transition: all .2s;
+
+    &:hover, &:active{
+      filter: brightness(0.9);
+      box-shadow: -2px -1px 6px 0px #ffffff, 2px 1px 6px 0px rgb(95 157 231 / 48%);
+    }
+  }

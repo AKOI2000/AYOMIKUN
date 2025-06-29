@@ -1,0 +1,85 @@
+body {
+  font-family: "inter", sans-serif;
+  background: #fff;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "eudoxus-extraBold", sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'eudoxus-extraBold', sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.h3-white, .paragraph-white{
+    color: #e0e2ef;
+}
+
+.paragraph-grey-300, .paragraph-grey-500 {
+  color: #e0e2ef;
+  font-size: 1.6rem;
+}
+
+.h2-grey{
+    color: #111;
+    text-align: center;
+}
+
+@font-face {
+  font-family: "inter-italic";
+  src: url(../font/Inter/Inter-Italic-VariableFont_opsz\wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "inter";
+  src: url(../font/Inter/Inter-VariableFont_opsz\wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "eudoxus-bold";
+  src: url(../font/eudoxus/EudoxusSans-Bold-BF659b6cb1408e5.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "eudoxus-extraBold";
+  src: url(../font/eudoxus/EudoxusSans-ExtraBold-BF659b6cb1b96c9.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "eudoxus-bolextraLight";
+  src: url(../font/eudoxus/EudoxusSans-ExtraLight-BF659b6cb1e7092.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "eudoxus-light";
+  src: url(../font/eudoxus/EudoxusSans-Light-BF659b6cb2036b5.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "eudoxus-medium";
+  src: url(../font/eudoxus/EudoxusSans-Medium-BF659b6cb1c14cb.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "eudoxus";
+  src: url(../font/eudoxus/EudoxusSans-Regular-BF659b6cb1d4714.ttf)
+    format("truetype");
+}
