@@ -41,6 +41,8 @@
 #feature-section{
   position: relative;
   padding: 100px 5% 60px;
+  z-index: 999 !important;
+  background-color: #fff;
 
   .grid {
     width: 100%;

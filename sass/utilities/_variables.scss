@@ -1,5 +1,10 @@
 ._16-bottom-margin {
     margin-bottom: 16px;
+
+
+    @media (max-width: 320px) {
+        margin-bottom: 1rem;
+    }
 }
 
 ._14-top-margin {

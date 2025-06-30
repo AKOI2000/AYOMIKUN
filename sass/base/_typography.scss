@@ -32,6 +32,13 @@ h3 {
   font-size: 1.6rem;
 }
 
+
+  @media(max-width:399px){
+    .paragraph-grey-300{
+      font-size: 1.5rem;
+    }
+  }
+
 .h2-grey{
     color: #111;
     text-align: center;
